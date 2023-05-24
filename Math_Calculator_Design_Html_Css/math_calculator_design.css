@@ -1,0 +1,71 @@
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+.container-sm .container-use-for-platform-of-calculator,
+.container-md .container-use-for-platform-of-calculator,
+.container-lg .container-use-for-platform-of-calculator,
+.container-xl .container-use-for-platform-of-calculator,
+.container-xxl .container-use-for-platform-of-calculator {
+  height: 92vh;
+  width: 350px;
+  margin: 50px;
+  border: 3px solid black;
+  border-radius: 5%;
+  background-image: linear-gradient(45deg, lightblue, white);
+}
+.container-sm .row:nth-child(1),
+.container-md .row:nth-child(1),
+.container-lg .row:nth-child(1),
+.container-xl .row:nth-child(1),
+.container-xxl .row:nth-child(1) {
+  height: 170px;
+  border: 0px solid green;
+  margin: 0;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10%;
+  box-shadow: 2px;
+}
+.container-sm .row,
+.container-md .row,
+.container-lg .row,
+.container-xl .row,
+.container-xxl .row {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: teal;
+}
+.container-sm .row .col-3 .class-input-use-for-button,
+.container-md .row .col-3 .class-input-use-for-button,
+.container-lg .row .col-3 .class-input-use-for-button,
+.container-xl .row .col-3 .class-input-use-for-button,
+.container-xxl .row .col-3 .class-input-use-for-button {
+  border: 0px;
+  padding: 10px;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  background-color: steelblue;
+  box-shadow: 0px 12px;
+  border-radius: 5px;
+  transition: all 1s linear;
+}
+.container-sm .row .col-3 .class-input-use-for-button:active,
+.container-md .row .col-3 .class-input-use-for-button:active,
+.container-lg .row .col-3 .class-input-use-for-button:active,
+.container-xl .row .col-3 .class-input-use-for-button:active,
+.container-xxl .row .col-3 .class-input-use-for-button:active {
+  transform: translateY(12px);
+  background-color: blue;
+  box-shadow: 0px 2px teal;
+}/*# sourceMappingURL=math_calculator_design.css.map */
