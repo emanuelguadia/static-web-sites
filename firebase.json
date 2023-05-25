@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "math-calculator",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
