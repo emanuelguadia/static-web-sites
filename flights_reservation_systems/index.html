@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container-sm container-lg">
+      <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <b>Adantrip</b>
+                    </div>
+                  <div class="col-lg-2">Hotels</div>
+                  <div class="col-lg-2">Rooms</div>
+                  <div class="col-lg-2">Flights</div>
+                  <div class="col-lg-2">Cars</div>
+                  <div class="col-lg-2">Experience</div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                  </div>
+                  <div class="col">
+                    <div class="row">
+                      <div class="col-lg-3">USD</div>
+                      <div class="col-lg-3">
+                        <img src="../assets/imgs/united-states.png" alt="" />
+                      </div>
+                      <div class="col-lg-3">
+                        <img src="../assets/imgs/use.png" alt="" />
+                      </div>
+                      <div class="col-lg-3">My Account</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container-lg">
+           <div class="row">
+            <div class="col-6">
+              <h6>Buenos Airs  lle de France</span></h6>
+              <label>Round trip economy, 1 passenger</label>
+              <br>
+              <label>Depart: Aust 15,2019 </label>
+              <br>
+              <label>Return: Aust 16,2019 </label>
+              <br>
+              <span>Flight Details:-<select name="Flight Details" id=""></select></span>
+              <br>
+            </div>
+            <div class="col-6">
+              <img class="iberia-svg" src="../assets/imgs/iberia.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-6">
+            <label>Enter Passenger Details</label>
+            <label>Passenger 1</label>
+            <form action="Page2.html" method="post">
+              <select class="months" id="">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <!-- defulte value -->
+                <option value="Month" selected="selected">Month</option>
+                <option value="March">March</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+    
+              <select class="days" name="" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <!-- defulte value -->
+                <option value="Day" selected="selected">Day</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+            
+              <select class="years" name="" id="">
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <!-- defulte value -->
+                <option value="Year" selected="selected">Year</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+              </select>
+              <select class="genders" name="SelectStatus" id="">
+                <option value="student">Female</option>
+                <option value="farmer">Male</option>
+                <!-- defulte value -->
+                <option value="Gender" selected="selected">Gender</option>
+              </select>
+              <br>
+              <input class="first-name" type="text" value="Enter First Name" />
+              <input class="last-name" type="text" value="Enter Last Name" />
+              <br />
+              <input class="passport-serial" type="text" name="User-Age" value="Passport Serial" />
+              <select class="citizen-ship" name="" id="">
+                <option value="ISRAEL">ISRAEL</option>
+                <option value="ITALIC">ITALIC</option>
+                <!-- defulte value -->
+                <option value="citizenship" selected="selected">Citizenship</option>
+                <option value="USA">USA</option>
+                <option value="ENGLAND">ENGLAND</option>
+              </select>
+            </form>
+            </div>
+            <div class="col-6">
+              </div>
+          </div>
+        </div>
+        <div class="container-lg">
+          <div class="row"> 
+            <div class="col-6">
+              <span>Enter Balling Information</span>
+              <br>
+              <span>Balling Address </span>
+              <form action="Page2.html" method="get">
+                <input class="first-name" type="text" value="Enter First Name" />
+                <input class="last-name" type="text" value="Enter Last Name" />
+                <br />
+                <input class="first-name" type="text" value="Enter First Name" />
+                <input class="last-name" type="text" value="Enter Last Name" />
+                <br />
+                <!-- <span>Card Details</span> -->
+                <input class="name-on-card" type="text" value="name on card"/>
+                <input class="credit-debit-card-number" type="text" value="Credit/Debit Card Number"/>
+                <br>
+                <select class="months" id="">
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <!-- defulte value -->
+                  <option value="Month" selected="selected">month</option>
+                  <option value="March">March</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+                <select class="years" name="" id="">
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <!-- defulte value -->
+                  <option value="Year" selected="selected">year</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                </select>
+                <input class="security-cod" type="text" value="Security Cod"/>               
+                <img src="../assets/imgs/mastercard.png" alt="">
+                <img src="../assets/imgs/Visa.png" alt="">
+                <img src="../assets/imgs/Visa-electronic.png" alt="">
+                <img src="../assets/imgs/discover new.png" alt="">
+                <img src="../assets/imgs/maestro.png" alt="">
+                <img src="../assets/imgs/AE.png" alt="">
+              </form>          
+            </div>   
+            <div class="col-6">
+            </div>
+          </div> 
+        </div>
+        <div class="container-lg">
+           <div class="row">
+            <div class="col-6">
+              <h6>Total</h6>
+              <p>By clicking book now  button you agree   with terms and money back gurantee
+              </p>
+              <p>  Thanks you for trusting
+                our service.</p>
+            </div>
+            <div class="col-6">
+              <h1>$1907.68</h1>
+            </div>
+            <input class="book-now" type="button" value="BOOK NOW"/>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3">
+              <h6>Booking Summery</h6>
+              <label for="">Round Trip,</label>
+              <label for="">Economy,</label>
+              <label for="">1 passenger</label>
+              <br>
+              <label for="">Depart:Aug 15,2019</label>
+              <br>
+              <label for="">Return:Aug 15,2019</label>
+            </div>
+            <div class="col-lg-3">
+              <div class="container-lg">
+               <div class="row">
+                 <div class="col-lg-3"><h6>Charges</h6></div>
+                  <div class="col-lg-3"><label class="passenger-1" for="">1 passenger</label><span>$1907.68</span>
+                    <!-- <br>
+                    <span>economy</span> -->
+                  </div>
+                  <div class="col-lg-3">
+                    <label class="total" for="">Total</label><span>$1907.68</span>
+                  </div>
+                  <div class="col-lg-3"></div>
+                </div> 
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <input
+                type="checkbox"
+                name="chkLicense"
+                value="chkLicense"
+                id="chkLicense"
+                checked 
+              />
+              <span>Manage your bookings!</span>
+              <p>You're in control of your booking-on registration required </p>
+              <input
+              type="checkbox"
+              name="chkLicense"
+              value="chkLicense"
+              id="chkLicense"
+              checked 
+            />
+            <span>Customer support available 24/7 worldwide!</span>
+            <p>Website and customer support in English and 41 other language </p>
+            </div>
+            <div class="col-lg-3">
+              <p>You're in control of your booking-on registration required </p>
+              <input
+              type="checkbox"
+              name="chkLicense"
+              value="chkLicense"
+              id="chkLicense"
+              checked 
+            />
+            <span>Customer support available 24/7 worldwide!</span> 
+            <p>Website and customer support in English and 41 other language </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <h5>Adantrip</h5>
+              <p>
+                pellentesque quam supscripit non aptent torquent common curae ut
+                aliquet augue tortor cubilia lobortis sodales
+              </p>
+              <p>
+                suscripit risus varius torquent aptent velit felies sem
+                himenaeos lacus fermentum potenti facilisi felies vulputate
+              </p>
+            </div>
+            <div class="col">
+              <h6>Teravel Mate</h6>
+              <label> about travel mate </label>
+              <br />
+              <label> mobile app </label> <br /><label>
+                customer support
+              </label>
+              <br /><label> advertising </label> <br />
+              <label> jobs </label> <br />
+              <label> privecy policy </label> <br />
+              <label> terms of use </label>
+            </div>
+            <div class="col">
+              <h6>Explore</h6>
+              <label for="Countries">Countries</label>
+              <br />
+              <label for="Regions">Regions</label>
+              <br />
+              <label for="Cities">Cities</label>
+              <br />
+              <label for="Districs">Districs</label>
+              <br />
+              <label for="Ariports">Ariports</label>
+              <br />
+              <label for="Hotels">Hotels</label>
+              <br />
+              <label for="Places of interest">Places of interest</label>
+              <br />
+            </div>
+            <div class="col">
+              <h6>Book</h6>
+              <label for="Apartments">Apartments</label>
+              <br />
+              <label for="Resorts">Resorts</label>
+              <br />
+              <label for="Villas">Villas</label>
+              <br />
+              <label for="Hotels">Hotels</label>
+              <br />
+              <label for="B&Bs">B&Bs</label>
+              <br />
+              <label for="Guesthoues">Guesthoues</label>
+              <br />
+              <label for="Hotel Chains">Hotel Chains</label>
+              <br />
+            </div>
+            <div class="col">
+              <div class="Save-up-to">
+                <p>Save up to 50% off your nex trip</p>
+                <p>Subscribe to unlock secret deals</p>
+                <input type="text" placeholder="Type your E-mail here" />
+                <br />
+                <input class="get-deals" type="button" value="GET DEALS" />
+              </div>
+            </div>
+            <div class="col"><h6></h6></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-6">
+                  <h6>Copyright 2018 Adantrip all right reserved</h6>
+                </div>
+                <div class="col-6"></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-2">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="col-2">
+                          <i class="fa-brands fa-google"></i>
+                        </div>
+                        <div class="col-2">
+                          <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="col-2">
+                          <i class="fa-brands fa-square-youtube"></i>
+                        </div>
+                        <div class="col-2">
+                          <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="col-2"></div>
+                      </div>
+                    </div>
+                    <div class="col-6"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

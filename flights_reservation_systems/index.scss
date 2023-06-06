@@ -1,0 +1,367 @@
+* {
+  margin: 0px;
+}
+body {
+  //display: flex;
+  //flex-flow:column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  text-align: center;
+  font-size: large;
+  background-image: linear-gradient(45deg, white, lightblue);
+}
+.container-sm,
+container-lg {
+  margin-top: 1%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 7% 69% 24%;
+  background-image: linear-gradient(45deg, azure, white);
+  //starting style the  header and the menu bar in the header
+  header {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    color: white;
+    grid-column: span 6;
+    box-sizing: border-box;
+    background-color: black;
+    .container-fluid {
+      margin: 0px;
+      padding: 0px;
+      .row {
+        .col {
+          .container-fluid {
+            .row {
+              //  &:nth-child(1){
+              //      font-weight: bold;
+              //     }
+              .col-lg-2 {
+                padding-left: 80px;
+                font-size: small;
+                // padding:10px;
+                margin-top: 20px;
+              }
+              .col {
+                .row {
+                  padding-right: 23px;
+                  .col-lg-3 {
+                    color: white;
+                    font-size: x-small;
+                    font-weight: bold;
+                    padding: 10px;
+                    margin-top: 15px;
+                    img {
+                      width: 16px;
+                      height: 16px;
+                      position: relative;
+                      background-color: aqua;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 538px) {
+      .fa-sharp {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 538px) {
+      .fa-sharp {
+        color: brown;
+      }
+      .row {
+        .col {
+          .container-fluid {
+            .row {
+              .col-lg-2 {
+                display: none;
+              }
+            }
+          }
+          .container-fluid {
+            .row {
+              .col {
+                .row {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 538px) {
+      .fa-sharp {
+        color: black;
+      }
+    }
+  }
+  //finished style the  header and the menu bar in the header and...
+  //starting style the  main
+  main {
+    grid-column: span 4;
+    .container-lg {
+      background-color: aqua;
+      height: 25%;
+      .row {
+        justify-content: center;
+        .col-6 {
+          font-size: x-small;
+          .iberia-svg {
+            height: 100px;
+            width: 300px;
+          }
+          form {
+            height: 70px;
+            // background-color: greenyellow;
+            .months {
+              margin-left: 0px;
+              height: 20px;
+              width: 103px;
+            }
+            .years,
+            .days {
+              height: 22px;
+            }
+            .genders {
+              width: 205px;
+              height: 20px;
+            }
+            .first-name,
+            .last-name,
+            .passport-serial,
+            .citizen-ship,
+            .name-on-card,
+            .credit-debit-card-number {
+              width: 200px;
+              margin-top: 3px;
+            }
+            .citizen-ship {
+              height: 20px;
+            }
+            img {
+              width: 18.5px;
+              height: 20px;
+            }
+          }
+        }
+        .book-now {
+          background-color: red;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 538px) {
+  main {
+    .container-lg {
+      border: 1px solid black;
+      height: 10%;
+      .row {
+        height: 100%;
+        background-color: yellow;
+        flex-direction: column;
+        justify-content: space-between;
+        .col-6 {
+          flex-direction: column;
+          flex-wrap: wrap;
+          font-size: xx-small;
+          .iberia-svg {
+            display: none;
+          }
+
+          span {
+            display: none;
+          }
+          h6,
+          p,
+          h1 {
+            font-size: xx-small;
+            font-weight: bold;
+            display: none;
+          }
+          form {
+            .days,
+            .years {
+              width: 275px;
+            }
+            h6,
+            p {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .book-now {
+      display: none;
+      width: 115px;
+      height: 30px;
+    }
+  }
+}
+//finished style the  main and...
+//starting style the  aside
+aside {
+  grid-column: span 2;
+  .container-fluid {
+    height: 550px;
+    .row {
+      flex-direction: column;
+      height: 100%;
+      background-color: lightgrey;
+      .col-lg-3 {
+        width: 100%;
+        height: 25%;
+        .container-lg {
+          height: 100%;
+          width: 100%;
+          .row {
+            .col-lg-3 {
+              h6,
+              .passenger-1 {
+                text-align: center;
+              }
+              .passenger-1,
+              .total {
+                margin-right: 50px;
+              }
+              .total {
+                border-top: 0.5px solid black;
+                font-size: small;
+                font-weight: bolder;
+              }
+            }
+          }
+        }
+        label {
+          font-size: xx-small;
+          font-weight: bold;
+        }
+        span {
+          font-size: small;
+          font-weight: bolder;
+        }
+        p {
+          font-size: xx-small;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 538px) {
+  aside {
+    display: none;
+  }
+}
+//finished style the  aside and...
+//starting style the  footer
+footer {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  grid-column: span 6;
+  box-sizing: border-box;
+  background-color: aqua;
+  .container-fluid {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    color: white;
+    grid-column: span 6;
+    box-sizing: border-box;
+    background-color: lightgreen;
+    height: 140px;
+    color: blue;
+    font-size: x-small;
+  }
+  .row {
+    .col {
+      margin-left: 13px;
+      p,
+      label {
+        text-align: end;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+
+  .container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    color: white;
+    grid-column: span 6;
+    box-sizing: border-box;
+    background-color: black;
+    height: 35px;
+  }
+  .container {
+    .row {
+      .col-6 {
+        .row {
+          .col-6 {
+            h6 {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fa-facebook-f,
+  .fa-google,
+  .fa-twitter,
+  .fa-square-youtube,
+  .fa-instagram {
+    font-size: x-small;
+    text-align: center;
+  }
+
+  .Save-up-to {
+    box-sizing: border-box;
+    background-color: blueviolet;
+    height: 92%;
+    p {
+      color: white;
+      // text-align: start;
+    }
+    .get-deals {
+      background-color: yellowgreen;
+      margin-top: 10px;
+      margin-right: 60px;
+    }
+  }
+  @media screen and (max-width: 538px) {
+    .container-fluid {
+      .row {
+        flex-direction: column;
+        .col{
+        h5{
+          // font-size:small;
+          font-weight: bold;
+        }
+        p{
+          font-size:x-small;
+          font-weight: bold;
+          text-align: start;
+          padding: 40px;
+        }
+        }
+      }
+    }
+    .container {
+      display: none;
+    }
+  }
+}
+//finished style the  footer and...
